@@ -130,9 +130,6 @@ main {
   margin-left: 5rem;
   padding: 1rem;
 }
-* {
-  outline: 1px solid cyan;
-}
 body {
   box-sizing: border-box;
 }
@@ -225,12 +222,22 @@ main .middleContainerA img {
 }
 main .middleContainerA .picBox {
   max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main .middleContainerA .textBox {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
   font-size: 1.6rem;
   max-width: 100%;
   padding: 1rem;
   color: #f5f5f5;
+}
+main .middleContainerA .textBox p {
+  line-height: 2rem;
 }
 main .middleContainerB {
   height: 700px;
@@ -269,18 +276,38 @@ main .bottomContainer {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
-  background-image: url('../RESOURCES/1024px-8\,9-dihydroxy-delta-6a\(10a\)-tetrahydrocannabinol.png');
+  background-color: #f5f5f5;
   opacity: 0.9;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 1fr;
   box-shadow: 5px 5px 5px -1px #000000;
-  border-radius: 3px;
+  border: black;
 }
 main .bottomContainer .teamPics {
   margin: 2.5rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .bottomContainer img {
+  height: 150px;
+  width: 150px;
   max-width: 100%;
   max-height: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px black;
+}
+main .bottomContainer figcaption {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 2.5rem;
+}
+main .footer {
+  height: 350px;
+  max-height: 350px;
 }
