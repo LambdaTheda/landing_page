@@ -174,6 +174,16 @@ body::-webkit-scrollbar-thumb {
   color: #f5f5f5;
   text-decoration: none;
 }
+.navbar .navLogo {
+  height: 7rem;
+  width: 5rem;
+  max-width: 5rem;
+}
+.navbar .navLogo img {
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
 .navbar .handles {
   display: flex;
   flex-direction: column;
@@ -205,7 +215,8 @@ main #topImage {
   position: relative;
   height: 650px;
   width: 100%;
-  box-shadow: 5px 5px 5px -1px #FBE27A;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
 }
 main #learnMore {
   font-weight: bolder;
@@ -241,15 +252,17 @@ main .titleBox {
 main .middleContainerA {
   display: grid;
   background-color: #3F6224;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   height: 700px;
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
-  box-shadow: 5px 5px 5px -1px #FBE27A;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
   border-radius: 3px;
 }
 main .middleContainerA img {
+  padding: 1rem;
   max-height: 350px;
   max-width: 100%;
   border-radius: 50%;
@@ -262,8 +275,8 @@ main .middleContainerA .picBox {
   justify-content: center;
 }
 main .middleContainerA .textBox {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-auto-rows: minmax(668px, auto);
   margin-right: 1.5rem;
   font-size: 1.6rem;
   max-width: 100%;
@@ -280,7 +293,8 @@ main .middleContainerB {
   margin: 0 auto;
   background-color: #FBE27A;
   position: relative;
-  box-shadow: 5px 5px 5px -1px #000000;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
   border-radius: 3px;
 }
 main .middleContainerB img {
@@ -311,12 +325,14 @@ main .bottomContainer {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
   background-color: #f5f5f5;
+  background-image: url(../RESOURCES/JaredMoleculePhoto1.jpg);
   opacity: 0.9;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1fr;
-  box-shadow: 5px 5px 5px -1px #000000;
   border: black;
 }
 main .bottomContainer .teamPics {
@@ -347,18 +363,29 @@ main .bottomContainer .bold {
   text-decoration: none;
 }
 main .footer {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   height: 350px;
   max-height: 350px;
+  margin: 0 auto;
   margin-top: 5rem;
+  width: 90%;
 }
-main .footer #logo {
+main .footer .logo {
   height: 100%;
+  max-height: 100%;
+  border: ;
 }
-main .footer #logo img {
-  height: 100%;
+main .footer .logo img {
+  height: 349px;
+  max-height: 100%s;
   width: 100%;
+  background-color: #364140;
+}
+main .footer #contact {
+  padding: 2rem;
 }
 #teamMain {
   margin-left: 5rem;
