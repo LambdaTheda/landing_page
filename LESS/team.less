@@ -1,0 +1,51 @@
+// *{
+//   outline: 2px solid cyan;
+// }
+
+#teamMain{
+  margin-left: 5rem;
+  padding: 1rem;
+  background: #f5f5f5;
+}
+
+
+.bios{
+  display: grid;
+  width: 90%;
+  grid-gap: 2rem;
+  margin: 0 auto;
+  
+  div{
+    background-color: @shark;
+    padding: 1rem;
+  }
+
+  
+  
+  .teambio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 1rem;
+    height: 200px;
+    width: 90%;
+
+    div{
+      background-color: @mjgreen;
+    }
+    
+    .pic{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      img{
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    
+  }
+}
