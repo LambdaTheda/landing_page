@@ -207,9 +207,14 @@ body::-webkit-scrollbar-thumb {
   width: 4rem;
   box-shadow: 2px 2px 3px #599039;
 }
+.blackShadows {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+}
 main {
   margin-left: 5rem;
   background: #364140;
+  height: auto;
 }
 main .topContainer {
   height: fit-content;
@@ -364,7 +369,6 @@ main .bottomContainer img {
 main .bottomContainer figure {
   height: auto;
   width: 25%;
-  max-width: 100%;
 }
 main .bottomContainer figcaption {
   text-align: center;
@@ -381,10 +385,9 @@ main .bottomContainer .bold {
 main .footer {
   border-radius: 0.3rem;
   box-shadow: 6px 6px 30px black;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
+  flex-direction: row;
   height: 350px;
-  max-height: 350px;
   margin: 0 auto;
   margin-top: 5rem;
   width: 90%;
@@ -402,25 +405,37 @@ main .footer .logo img {
 main .footer #contact {
   padding: 2rem;
 }
-@media only screen and (max-width: 1050px) {
-  .bottomContainer {
+@media (max-width: 1000px) {
+  main .bottomContainer {
     flex-direction: column;
   }
-  .middleContainerB img {
-    height: 10px;
-    width: 10px;
+  main .bottomContainer figure {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  main .middleContainerB img {
+    width: 90%;
+    max-width: 90%;
+  }
+  main .footer {
+    flex-direction: column;
   }
 }
 #teamMain {
   margin-left: 5rem;
   padding: 1rem;
   background: #f5f5f5;
+  background-image: url("../RESOURCES/JaredMoleculePhoto1.jpg");
 }
 .bios {
-  display: grid;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   grid-gap: 2rem;
   margin: 0 auto;
+  margin-left: 2rem;
 }
 .bios div {
   background-color: #393939;
@@ -430,8 +445,20 @@ main .footer #contact {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-gap: 1rem;
-  height: 200px;
+  height: 250px;
   width: 90%;
+  margin-bottom: 2rem;
+}
+.bios .teambio .role p {
+  font-size: 2rem;
+  font-family: rockwell;
+  font-weight: bold;
+  color: #FBE27A;
+}
+.bios .teambio .bio p {
+  font-size: 1rem;
+  color: #FBE27A;
+  line-height: 1.5rem;
 }
 .bios .teambio div {
   background-color: #599039;
@@ -440,10 +467,40 @@ main .footer #contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100%;
 }
 .bios .teambio .pic img {
+  padding: 2rem;
   height: 100%;
   width: 100%;
   max-width: 100%;
   max-height: 100%;
+}
+@media (max-width: 1000px) {
+  .bios .teambio {
+    grid-template-columns: 1fr;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  .bios .teambio .role p {
+    font-size: 1rem;
+  }
+  .bios .teambio .bio p {
+    font-size: 0.8rem;
+  }
+  .bios .teambio div {
+    width: auto;
+  }
+}
+@media (max-width: 500px) {
+  .bios .teambio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bios .teambio .pic {
+    height: 25%;
+  }
 }
