@@ -1,46 +1,59 @@
 main {
   margin-left: 5rem;
-  padding: 1rem;
   background: #364140;
   
+  
   .topContainer{
-    position: relative;
+    .SectionContainerSizes();
+    .blackShadows();
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
     width: 90%;
     margin: 0 auto;
+    background-image: url("../RESOURCES/plant.jpg");
+    background-size: cover;
+
+    .learnMore{
+      padding: 3rem;
+      font-weight: bolder;
+      font-size: 3.2rem;
+      text-shadow: 2px 2px grey;
+      color: white;
+      
+  
+      h2{
+        font-size: 4.5rem;
+      }
+    }
+
+    #recbutton{
+
+      #button{
+        align-self: end;
+      }
+
+      button{
+        text-decoration: none;
+        height: 50px;
+        width: 150px;
+        color: #f5f5f5;
+        background-color: #323232;
+        color: #f5f5f5;
+        box-shadow: 2px 2px 2px #B0C941;
+      }
+
+      .link-text{
+        color: #f5f5f5;
+        text-decoration: none;
+      }
+    }
+    
+    
     
   }
 
-  #topImage{
-    position: relative;
-    height: 650px;
-    width: 100%;
-    .blackShadows();
-  }
-
-  #learnMore{
-    font-weight: bolder;
-    font-size: 3.2rem;
-    text-shadow: 2px 2px grey;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    h2{
-      font-size: 4.5rem;
-    }
-
-    button{
-      height: 50px;
-      width: 150px;
-      background-color: #323232;
-      color: #f5f5f5;
-      box-shadow: 2px 2px 2px #B0C941;
-    }
   
-  }
 
   .titleBox{
    .sectionTitles();
@@ -48,25 +61,27 @@ main {
 
   .middleContainerA{
     display: grid;
-    background-color: #3F6224;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    .responsiveGrid();
     .SectionContainerSizes();
     .blackShadows();
+    background-color: #3F6224;
     border-radius: 3px;
-    
-    img {
-      padding: 1rem;
-      max-height: 350px;
-      max-width: 100%;
-      border-radius: 50%;
-    }
+    margin: 0 auto;
 
     .picBox{
+      display: grid;
+      overflow: hidden;
       max-height: 700px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      max-width: 100%;
+
+      img{
+        align-self: center;
+        justify-self: center;
+        padding: 1rem;
+        max-height: 350px;
+        max-width: 100%;
+        border-radius: 50%;
+      }
     }
 
     .textBox{
@@ -85,32 +100,32 @@ main {
   }
 
   .middleContainerB{
-
-    .SectionContainerSizes();
+    display: grid;
     background-color: @oleyeller;
-    position: relative;
+    .responsiveGrid();
+    .SectionContainerSizes();
     .blackShadows();
     border-radius: 3px;
+    
 
     img{
+      justify-self: center;
       height: 450px;
-      width: 25%;
+      width: 50%;
       max-width: 400px;
-      position: absolute;
-      top: 10%;
-      left: 50%;
+      padding: 2rem;
     }
 
     #ourStories{
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+      margin: 2rem;
       font-size: 1.4rem;
       color: #f5f5f5;
       height: 250px;
       width: 450px;
-      padding: 1rem;
       background-color: #3F6224;
-      position: absolute;
-      top: 20%;
-      left: 25%;
       opacity: 70%;
 
       h3{
@@ -123,12 +138,11 @@ main {
   .bottomContainer{
     .SectionContainerSizes();
     .blackShadows();
-    background-color: #f5f5f5;
-    background-image: url(../RESOURCES/JaredMoleculePhoto1.jpg);
-    opacity: .9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1fr;
+    .responsiveGrid();
+    background-image: url(../RESOURCES/JaredMoleculePhoto1.jpg);
+    opacity: .9;
     border: black;
 
     
@@ -147,6 +161,10 @@ main {
       max-height: 100%;
       border-radius: 50%;
       box-shadow: 2px 2px 2px 2px black;
+    }
+
+    figure{
+      max-width: 100%;
     }
 
     figcaption{
