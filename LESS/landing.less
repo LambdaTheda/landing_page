@@ -4,8 +4,12 @@ main {
   
   
   .topContainer{
-    .SectionContainerSizes();
-    .blackShadows();
+    height: fit-content;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: .3rem;
+    box-shadow: 6px 6px 30px black;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
@@ -15,7 +19,6 @@ main {
     background-size: cover;
 
     .learnMore{
-      padding: 3rem;
       font-weight: bolder;
       font-size: 3.2rem;
       text-shadow: 2px 2px grey;
@@ -29,11 +32,8 @@ main {
 
     #recbutton{
 
-      #button{
-        align-self: end;
-      }
-
       button{
+        align-self: center;
         text-decoration: none;
         height: 50px;
         width: 150px;
@@ -45,8 +45,9 @@ main {
 
       .link-text{
         color: #f5f5f5;
-        text-decoration: none;
+        text-decoration: none; 
       }
+
     }
     
     
@@ -60,23 +61,24 @@ main {
   }
 
   .middleContainerA{
-    display: grid;
-    .responsiveGrid();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     .SectionContainerSizes();
     .blackShadows();
     background-color: #3F6224;
-    border-radius: 3px;
     margin: 0 auto;
 
     .picBox{
-      display: grid;
-      overflow: hidden;
+      display: flex;
       max-height: 700px;
+      width: 50%;
       max-width: 100%;
+      justify-content: center;
+      align-items: center;
 
       img{
-        align-self: center;
-        justify-self: center;
         padding: 1rem;
         max-height: 350px;
         max-width: 100%;
@@ -85,11 +87,10 @@ main {
     }
 
     .textBox{
-      display: grid;
-      grid-auto-rows: minmax(668px, auto);
+      display: flex;
       margin-right: 1.5rem;
       font-size: 1.6rem;
-      max-width: 100%;
+      max-width: 500px;
       padding: 1rem;
       color: #f5f5f5;
 
@@ -100,9 +101,11 @@ main {
   }
 
   .middleContainerB{
-    display: grid;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: @oleyeller;
-    .responsiveGrid();
     .SectionContainerSizes();
     .blackShadows();
     border-radius: 3px;
@@ -117,13 +120,13 @@ main {
     }
 
     #ourStories{
-      align-self: center;
-      justify-self: center;
+      display: flex;
+      flex-direction: column;
       padding: 1rem;
       margin: 2rem;
       font-size: 1.4rem;
       color: #f5f5f5;
-      height: 250px;
+      height: auto;
       width: 450px;
       background-color: #3F6224;
       opacity: 70%;
@@ -137,17 +140,18 @@ main {
 
   .bottomContainer{
     .SectionContainerSizes();
+    height: auto;
     .blackShadows();
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    .responsiveGrid();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-image: url(../RESOURCES/JaredMoleculePhoto1.jpg);
     opacity: .9;
     border: black;
 
     
     .teamPics{
-      margin: 2.5rem;
+      margin: 2rem;
       height: 50%;
       display: flex;
       justify-content: center;
@@ -164,6 +168,8 @@ main {
     }
 
     figure{
+      height: auto;
+      width: 25%;
       max-width: 100%;
     }
 
@@ -196,7 +202,6 @@ main {
     .logo{
       height: 100%;
       max-height: 100%;
-      border: ;
 
       img{
         height: 349px;
@@ -212,5 +217,18 @@ main {
 
 
 
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  .bottomContainer{
+    flex-direction: column;
+  }
+
+  .middleContainerB{
+    img{
+      height: 10px;
+      width:10px;
+    }
   }
 }

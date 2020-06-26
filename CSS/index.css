@@ -1,3 +1,7 @@
+.blackShadows {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+}
 .responsiveGrid {
   grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
 }
@@ -221,7 +225,6 @@ main .topContainer {
   background-size: cover;
 }
 main .topContainer .learnMore {
-  padding: 3rem;
   font-weight: bolder;
   font-size: 3.2rem;
   text-shadow: 2px 2px grey;
@@ -230,10 +233,8 @@ main .topContainer .learnMore {
 main .topContainer .learnMore h2 {
   font-size: 4.5rem;
 }
-main .topContainer #recbutton #button {
-  align-self: end;
-}
 main .topContainer #recbutton button {
+  align-self: center;
   text-decoration: none;
   height: 50px;
   width: 150px;
@@ -257,37 +258,37 @@ main .titleBox {
   text-shadow: 2px 2px grey;
 }
 main .middleContainerA {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   height: fit-content;
   width: 90%;
   max-width: 90%;
   border-radius: 0.3rem;
   box-shadow: 6px 6px 30px black;
   background-color: #3F6224;
-  border-radius: 3px;
   margin: 0 auto;
 }
 main .middleContainerA .picBox {
-  display: grid;
-  overflow: hidden;
+  display: flex;
   max-height: 700px;
+  width: 50%;
   max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 main .middleContainerA .picBox img {
-  align-self: center;
-  justify-self: center;
   padding: 1rem;
   max-height: 350px;
   max-width: 100%;
   border-radius: 50%;
 }
 main .middleContainerA .textBox {
-  display: grid;
-  grid-auto-rows: minmax(668px, auto);
+  display: flex;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  max-width: 100%;
+  max-width: 500px;
   padding: 1rem;
   color: #f5f5f5;
 }
@@ -295,9 +296,11 @@ main .middleContainerA .textBox p {
   line-height: 2rem;
 }
 main .middleContainerB {
-  display: grid;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #FBE27A;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   height: fit-content;
   width: 90%;
   max-width: 90%;
@@ -314,13 +317,13 @@ main .middleContainerB img {
   padding: 2rem;
 }
 main .middleContainerB #ourStories {
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   margin: 2rem;
   font-size: 1.4rem;
   color: #f5f5f5;
-  height: 250px;
+  height: auto;
   width: 450px;
   background-color: #3F6224;
   opacity: 70%;
@@ -333,17 +336,18 @@ main .bottomContainer {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
+  height: auto;
   border-radius: 0.3rem;
   box-shadow: 6px 6px 30px black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-image: url(../RESOURCES/JaredMoleculePhoto1.jpg);
   opacity: 0.9;
   border: black;
 }
 main .bottomContainer .teamPics {
-  margin: 2.5rem;
+  margin: 2rem;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -358,6 +362,8 @@ main .bottomContainer img {
   box-shadow: 2px 2px 2px 2px black;
 }
 main .bottomContainer figure {
+  height: auto;
+  width: 25%;
   max-width: 100%;
 }
 main .bottomContainer figcaption {
@@ -386,7 +392,6 @@ main .footer {
 main .footer .logo {
   height: 100%;
   max-height: 100%;
-  border: ;
 }
 main .footer .logo img {
   height: 349px;
@@ -396,6 +401,15 @@ main .footer .logo img {
 }
 main .footer #contact {
   padding: 2rem;
+}
+@media only screen and (max-width: 1050px) {
+  .bottomContainer {
+    flex-direction: column;
+  }
+  .middleContainerB img {
+    height: 10px;
+    width: 10px;
+  }
 }
 #teamMain {
   margin-left: 5rem;
