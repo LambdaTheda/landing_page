@@ -1,0 +1,7 @@
+.blackShadows {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+}
+.responsiveGrid {
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}

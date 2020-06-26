@@ -1,0 +1,506 @@
+.blackShadows {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+}
+.responsiveGrid {
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+body {
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: #3F6224;
+}
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #FBE27A;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #FBE27A;
+}
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.navbar .navbar-nav .nav-item {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+}
+.navbar .navbar-nav .nav-item .link-text {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.navbar .navLogo {
+  height: 7rem;
+  width: 5rem;
+  max-width: 5rem;
+}
+.navbar .navLogo img {
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+.navbar .handles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.navbar .handles .handleImage {
+  color: #393939;
+}
+.navbar button {
+  text-decoration: none;
+  height: 2rem;
+  background-color: #393939;
+  width: 4rem;
+  box-shadow: 2px 2px 3px #599039;
+}
+.blackShadows {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+}
+main {
+  margin-left: 5rem;
+  background: #364140;
+  height: auto;
+}
+main .topContainer {
+  height: fit-content;
+  max-width: 90%;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("../RESOURCES/plant.jpg");
+  background-size: cover;
+}
+main .topContainer .learnMore {
+  font-weight: bolder;
+  font-size: 3.2rem;
+  text-shadow: 2px 2px grey;
+  color: white;
+}
+main .topContainer .learnMore h2 {
+  font-size: 4.5rem;
+}
+main .topContainer #recbutton button {
+  align-self: center;
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+  background-color: #323232;
+  color: #f5f5f5;
+  box-shadow: 2px 2px 2px #B0C941;
+}
+main .topContainer #recbutton .link-text {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+main .titleBox {
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #f5f5f5;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-shadow: 2px 2px grey;
+}
+main .middleContainerA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  width: 90%;
+  max-width: 90%;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+  background-color: #3F6224;
+  margin: 0 auto;
+}
+main .middleContainerA .picBox {
+  display: flex;
+  max-height: 700px;
+  width: 50%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main .middleContainerA .picBox img {
+  padding: 1rem;
+  max-height: 350px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+main .middleContainerA .textBox {
+  display: flex;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
+  max-width: 500px;
+  padding: 1rem;
+  color: #f5f5f5;
+}
+main .middleContainerA .textBox p {
+  line-height: 2rem;
+}
+main .middleContainerB {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FBE27A;
+  height: fit-content;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+  border-radius: 3px;
+}
+main .middleContainerB img {
+  justify-self: center;
+  height: 450px;
+  width: 50%;
+  max-width: 400px;
+  padding: 2rem;
+}
+main .middleContainerB #ourStories {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem;
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  height: auto;
+  width: 450px;
+  background-color: #3F6224;
+  opacity: 70%;
+}
+main .middleContainerB #ourStories h3 {
+  font-size: 2rem;
+}
+main .bottomContainer {
+  height: fit-content;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(../RESOURCES/JaredMoleculePhoto1.jpg);
+  opacity: 0.9;
+  border: black;
+}
+main .bottomContainer .teamPics {
+  margin: 2rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bottomContainer img {
+  height: 150px;
+  width: 150px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px black;
+}
+main .bottomContainer figure {
+  height: auto;
+  width: 25%;
+}
+main .bottomContainer figcaption {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+main .bottomContainer .bold {
+  text-decoration: none;
+}
+main .footer {
+  border-radius: 0.3rem;
+  box-shadow: 6px 6px 30px black;
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 90%;
+}
+main .footer .logo {
+  height: 100%;
+  max-height: 100%;
+}
+main .footer .logo img {
+  height: 349px;
+  max-height: 100%s;
+  width: 100%;
+  background-color: #364140;
+}
+main .footer #contact {
+  padding: 2rem;
+}
+@media (max-width: 1000px) {
+  main .bottomContainer {
+    flex-direction: column;
+  }
+  main .bottomContainer figure {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  main .middleContainerB img {
+    width: 90%;
+    max-width: 90%;
+  }
+  main .footer {
+    flex-direction: column;
+  }
+}
+#teamMain {
+  margin-left: 5rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  background-image: url("../RESOURCES/JaredMoleculePhoto1.jpg");
+}
+.bios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  grid-gap: 2rem;
+  margin: 0 auto;
+  margin-left: 2rem;
+}
+.bios div {
+  background-color: #393939;
+  padding: 1rem;
+}
+.bios .teambio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 1rem;
+  height: 250px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.bios .teambio .role p {
+  font-size: 2rem;
+  font-family: rockwell;
+  font-weight: bold;
+  color: #FBE27A;
+}
+.bios .teambio .bio p {
+  font-size: 1rem;
+  color: #FBE27A;
+  line-height: 1.5rem;
+}
+.bios .teambio div {
+  background-color: #599039;
+}
+.bios .teambio .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+}
+.bios .teambio .pic img {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 1000px) {
+  .bios .teambio {
+    grid-template-columns: 1fr;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  .bios .teambio .role p {
+    font-size: 1rem;
+  }
+  .bios .teambio .bio p {
+    font-size: 0.8rem;
+  }
+  .bios .teambio div {
+    width: auto;
+  }
+}
+@media (max-width: 500px) {
+  .bios .teambio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bios .teambio .pic {
+    height: 25%;
+  }
+}
